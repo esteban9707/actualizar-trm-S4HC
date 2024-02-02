@@ -1,0 +1,10 @@
+applications:
+- name: actualizarTrm
+  path: .
+  memory: 128M
+  buildpacks:
+    - nodejs_buildpack
+  command: npm run start:prod
+  services:
+    - xsuaaforsimplejobs
+    - jobschedulerinstance
